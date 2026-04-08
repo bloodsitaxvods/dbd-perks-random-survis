@@ -1,0 +1,68 @@
+body{
+background:#050505;
+display:flex;
+flex-direction:column;
+align-items:center;
+justify-content:center;
+height:100vh;
+margin:0;
+}
+
+.wrapper{
+position:relative;
+width:340px;
+height:340px;
+}
+
+.perk{
+position:absolute;
+width:120px;
+height:120px;
+transform:rotate(45deg);
+overflow:hidden;
+border:3px solid #ff8dc7;
+box-shadow:
+0 0 6px #ff8dc7,
+0 0 12px #ffb3d9,
+0 0 18px rgba(255,140,200,.4);
+}
+
+/* ESTA ES LA PARTE IMPORTANTE */
+.inner{
+position:absolute;
+top:50%;
+left:50%;
+width:160%;
+height:160%;
+background:url("https://picsum.photos/400") center/cover no-repeat;
+transform:translate(-50%,-50%) rotate(-45deg);
+}
+
+.perk:nth-child(1){ top:0; left:110px; }
+.perk:nth-child(2){ top:110px; left:220px; }
+.perk:nth-child(3){ top:220px; left:110px; }
+.perk:nth-child(4){ top:110px; left:0; }
+
+.names{
+margin-top:80px;
+color:#ffd6ec;
+text-align:center;
+font-size:18px;
+line-height:1.8;
+text-shadow:0 0 6px rgba(255,150,210,.6);
+}
+
+button{
+margin-top:20px;
+padding:12px 25px;
+background:linear-gradient(45deg,#ff8dc7,#ffb6df);
+border:none;
+color:white;
+cursor:pointer;
+border-radius:8px;
+box-shadow:0 0 10px rgba(255,150,210,.5);
+}
+
+button:hover{
+background:linear-gradient(45deg,#ff79c0,#ff9ed4);
+}
