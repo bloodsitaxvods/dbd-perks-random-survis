@@ -175,7 +175,7 @@ const files = [
 
 const perks = files.map(f => ({
 name: f.replace(".png","").replace(/-/g," "),
-img: "perks survi/" + f
+img: "perks%20survi/" + f
 }));
 
 const slots = [
